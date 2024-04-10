@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "c6e2657a-ab25-4dbc-8870-592e18e8daca",
+		"name": "UTNcourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11091742"
+	},
+	"item": [
+		{
+			"name": "UTNcourse",
+			"item": [
+				{
+					"name": "GetDateNow",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveFacts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"river el mas grande\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/facts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"facts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteFact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/facts/ee3464e1-c2b2-49d1-a918-61cdbe867bd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"facts",
+								"ee3464e1-c2b2-49d1-a918-61cdbe867bd9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
