@@ -6,11 +6,11 @@ async function init() {
   const host = "mysqldb";
 
   pool = mysql.createPool({
-        host: "mysqldb",
+    host: "mysqldb",
     user: "root",
     password: "secret",
     database: "factsdb",
-        port: 3306,
+    port: 3306,
   });
 
   return new Promise((acc, rej) => {
